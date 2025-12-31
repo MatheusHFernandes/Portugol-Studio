@@ -11,6 +11,6 @@ escreval ("digite o valor de B")
 leia (B)
 
 Media <- (A+B)/2
-escreval ("A média dos dois valores é: ", Media)
+escreval ("A média dos números" ,A," e",B," é:", Media)
 
 Fimalgoritmo

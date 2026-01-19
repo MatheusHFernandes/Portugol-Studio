@@ -25,7 +25,12 @@ inicio
       Escreval ("ALUNO: APROVADO")
       Escreval("------------------------")
    senao
-      Escreval ("ALUNO: REPROVADO")
-      Escreval("------------------------")
+      se (M >= 5) e (M <7) entao
+         Escreval ("ALUNO: EM RECUPERAÇÃO")
+         Escreval("------------------------")
+      senao
+         Escreval ("ALUNO: REPROVADO")
+         Escreval("------------------------")
+      fimse
    fimse
 fimalgoritmo

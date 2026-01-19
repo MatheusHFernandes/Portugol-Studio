@@ -10,9 +10,29 @@ inicio
    IMC <- M / (A^2)
    Escreval ("IMC: ", IMC:5:2) //5 CASAS, 2 DECIMAIS
 
-   se (IMC >= 18.5) e (IMC < 25) entao
-      Escreva("Parabéns! Você esta no seu peso ideal")
+   se (IMC < 17) entao
+      Escreval ("MUITO ABAIXO DO PESO")
    senao
-      Escreva("Você não esta no seu peso ideal")
+      se (IMC >= 17) e (IMC <= 18.5) entao
+         Escreval ("ABAIXO DO PESO")
+      senao
+         se (IMC >= 18.5) e (IMC <= 25) entao
+            Escreval ("PESO IDEAL")
+         senao
+            se (IMC >= 25) e (IMC <= 30) entao
+               Escreval ("SOBREPESO")
+            senao
+               se (IMC >= 30) e (IMC <= 35) entao
+                  Escreval ("OBESIDADE")
+               senao
+                  se (IMC >= 35) e (IMC <= 40) entao
+                     Escreval ("OBESIDADE SEVERA")
+                  senao
+                     Escreval("OBESIDADE MORBIDA")
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
    fimse
 fimalgoritmo

@@ -6,7 +6,7 @@ var
 inicio
       Escreval ("Quantos R$ a Creuza possui?")
       leia (RS)
-      Dolar <- RS/5.38
+      Dolar <- RS / 5,38
       Escreval ("Posso trocar meus reais no total de", dolar," US$")
 fimalgoritmo
 
